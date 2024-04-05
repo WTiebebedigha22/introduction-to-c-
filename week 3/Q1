@@ -1,0 +1,37 @@
+/*
+1. Create a program that performs the following tasks:
+        a. Prompt the user for a temperature that is the boiling point os a substance and store this in an appropraite variable.
+        b. Prompt the user for the current temperature of the substance.
+        c. Output the boiling point temperature and the current substance temperature.
+        d. Output an appropraite message. The message will be one of the following:
+                I. The substance tmeperature is below the boiling point
+                II. The substance temperature is at or above the boiling point
+*/
+
+#include <iostream>
+#include <cstdlib> // Used for system().
+using namespace std;// ?
+
+int main(){
+
+    double boiling_point. current_temp; //Variable used to store the data.
+
+    cout << "Enter the boiling point of the substance: "
+    cin >> boiling_point; // Store the boiling point information.
+
+    cout << "Enter the current temperature of the substance: "
+    cin >> current_temp; // Store the current temperature.
+    
+    cout << "The boiling point is: " << boiling_point << endl;
+    cout << "The current temperature is: " << current_temp << endl;
+
+    if (current_temp >= boiling_point){// Used to compare two given variables and output the result based on the information.
+        cout << "The Substance temperature is at or above the boiling point.";
+    }
+    else{
+        cout << "The substance temperature is below the boiling point. \n";// "\n" is used to go to the new line.
+    }
+
+    system("PAUSE");
+    return 0;
+};
